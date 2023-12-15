@@ -1,0 +1,13 @@
+index:
+    path: /
+    controller: App\Controller\IndexController::index
+
+
+json:
+    path: /json-response
+    controller: App\Controller\IndexController::jsonResponse
+
+
+hello:
+    path: /hello/{name}
+    controller: App\Controller\HomeController::hello
