@@ -34,4 +34,12 @@ class HomeController extends Controller{
             $messageGenerator=$this->container->get('message.generator');///alias usage
         return new Response($messageGenerator->helloMessage()."<hr>".$session->getName());
     }
+
+    /**
+     * @Route("/commands",name="commands")
+     */
+    
+    public function commands(){
+        return $this->render('commands.html.twig',['data'=> Rand(0,100) , 'sentence'=>""]); 
+    }
 }

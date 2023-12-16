@@ -1,7 +1,9 @@
 controllers:
     resource: ../../src/Controller/
     type: annotation
-
+ulas-test-bundle-controller:
+    resource: ../../src/Ulas/TestBundle/Controller/
+    type: annotation
 kernel:
     resource: ../../src/Kernel.php
     type: annotation
